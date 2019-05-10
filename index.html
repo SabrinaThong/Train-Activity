@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Activity</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    <link rel="stylesheet" href="assets\css\styles.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="jumbotron">
+        <h1>Train Times</h1>
+    </div>
+    <div id="traininfo">
+        <div id="trainheader">Current Train Schedule</div>
+        
+            <table>
+            <div class="row">
+            
+                <th  class="col-md-3">Train Name</th>
+                <tr id="trainListName"></tr>
+
+                <th  class="col-md-3">Destination</th>
+                <tr id="trainListDest"></tr>
+               
+                
+                <th  class="col-md-2">Frequency (min)</th>
+                <tr id="firstTrain"></tr>
+               
+              
+                <th class="col-md-2">Next Arrival</th>
+                <tr id="Freq"></tr>      
+              
+                <th class="col-md-2">Minutes Away</th>
+                <tr id="Min"></tr>
+            
+        </div>
+            </table>
+        
+<br>
+    <div id="traininfo">
+        <div id="trainheader">Add Train</div>
+            
+        <form id="secondform">
+            Train name:<br>
+            <input id="name" type="text" name="trainname"><br>
+            Destination:<br>
+            <input id="dest" type="text" name="destinationname"><br>
+            First Train Time (HH:mm - military time):<br>
+            <input id="firsttrain" type="text" name="trainname"><br>
+            Frequency (min):<br>
+            <input id="frequency" type="text" name="destinationname"><br>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+        </div>
+</div>
+</body>
+</html>

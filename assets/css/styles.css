@@ -1,0 +1,18 @@
+#traininfo {
+    border: 1px solid grey;
+}
+div {
+    line-height: 30px;
+}
+#trainheader {
+    background-color: lightcoral;
+}
+th,td {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.jumbotron {
+    line-height: 200px;
+    background-color: red;
+    text-align: center;
+}
